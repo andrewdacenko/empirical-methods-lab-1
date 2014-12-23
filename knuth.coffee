@@ -1,10 +1,8 @@
 Period = require './libs/period'
 Knuth = require './libs/knuth'
 
-seed = 380636297739
-
-method = new Knuth seed
-period = new Period new Knuth seed
+method = new Knuth
+period = new Period new Knuth
 count = 50
 rands = []
 

@@ -4,7 +4,7 @@
 # c - increment, 0 <= c < m
 # x - start, 0 <= x < m
 class LinearMethod
-	constructor: (options) -> 
+	constructor: (options = {m: 4294967291, a: 1664525, c: 1013904223, x: 127368123}) -> 
 		@m = options.m 
 		@a = options.a
 		@c = options.c

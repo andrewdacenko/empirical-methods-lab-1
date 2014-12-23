@@ -1,13 +1,6 @@
 Period = require './libs/period'
 Linear = require './libs/linear'
 
-# 1.1 Theorem
-fullPeriod = 
-	m: 4294967291 # Max prime number below 2^32
-	a: 1664525
-	c: 1013904223
-	x: 127368123
-
 # Not 1.1 Theorem
 smallPeriod =
 	m: -1 + Math.pow(2, 20)
@@ -15,9 +8,9 @@ smallPeriod =
 	c: 1234123
 	x: 67812
 
-method = new Linear fullPeriod
+method = new Linear
 methodShort = new Linear smallPeriod
-period = new Period new Linear fullPeriod
+period = new Period new Linear
 periodShort = new Period new Linear smallPeriod
 count = 50
 rands = []

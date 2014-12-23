@@ -19,7 +19,7 @@ class Digit
 		@digits.pop()
 
 class KnuthMethod
-	constructor: (@seed) ->
+	constructor: (@seed = 380636297739) ->
 	random: ->
 		currentDigits = [];
 		digits = new Digit @seed
